@@ -1,9 +1,15 @@
-## 🎵 Spotify SQL Data Analysis Project
+## Spotify SQL Data Analysis Project
 
-### 📌 Project Overview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/13291151-f341-42c6-9aec-2e9c4cb14308" width="500">
+</p>
+
+### Project Overview
 This project analyzes Spotify music data using PostgreSQL. The dataset includes various attributes such as artist name, track name, album details, audio features (danceability, energy, loudness, etc.), and streaming statistics. The goal is to extract meaningful insights through SQL queries, covering exploratory data analysis (EDA), data cleaning, and advanced data analysis.
 
 ### 📂 Dataset Information
+Source: https://www.kaggle.com/datasets/sanjanchaudhari/spotify-dataset/data
+
 **Table Name:** `spotify_data`
 
 **Columns:**
@@ -61,8 +67,3 @@ To understand the dataset, the following analyses were performed:
 - Integrate Tableau/Power BI for data visualization.
 - Apply machine learning techniques for track recommendation.
 - Expand dataset to include different time periods for trend analysis.
-
-### 📎 Author
-**Name:** [Your Name]  
-**LinkedIn:** [Your LinkedIn Profile]  
-**GitHub:** [Your GitHub Profile]
