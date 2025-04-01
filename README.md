@@ -58,7 +58,35 @@ To understand the dataset, the following analyses were performed:
 - **Data Cleaning:** Excel (for initial pre-processing)
 - **IDE:** pgAdmin / DBeaver
 
-### 📌 Key Learnings
+### SQL Techniques Used in Spotify Data Analysis  
+
+In this project, we employed a variety of **SQL techniques** to analyze Spotify's music dataset, extracting meaningful insights about track popularity, artist performance, and user engagement. Below are the key SQL methods utilized:  
+
+#### 1️⃣ **Basic Querying & Filtering**  
+- Used `SELECT` statements to retrieve relevant data fields.  
+- Applied `WHERE` clauses to filter results based on conditions (e.g., filtering tracks with more than 1 billion streams).  
+- Utilized `ORDER BY` to sort results based on numerical and categorical attributes.  
+
+#### 2️⃣ **Aggregation & Grouping**  
+- **`SUM()`**: Calculated total views and comments for different categories.  
+- **`AVG()`**: Found the average danceability and liveness of tracks.  
+- **`COUNT()`**: Counted the number of tracks per artist.  
+- **`GROUP BY`**: Aggregated data to summarize artist performance, album statistics, and streaming platforms.  
+
+#### 3️⃣ **Conditional Logic & Data Cleaning**  
+- Used `COALESCE()` to handle `NULL` values in streaming data.  
+- Applied `CASE WHEN` within `SUM()` to compare streams from different platforms (Spotify vs. YouTube).  
+
+#### 4️⃣ **Subqueries & Common Table Expressions (CTEs)**  
+- **Subqueries**: Used in `WHERE` clauses to filter based on computed aggregates (e.g., tracks with liveness above the dataset average).  
+- **WITH clauses (CTEs)**: Improved query readability by breaking down complex calculations into structured temporary tables (e.g., energy difference calculations across albums).  
+
+#### 5️⃣ **Window Functions for Ranking & Cumulative Calculations**  
+- **`DENSE_RANK()`**: Ranked the top 3 most-viewed tracks per artist.  
+- **`SUM() OVER()`**: Computed cumulative likes across tracks, ordered by views.  
+- **`PARTITION BY`**: Applied ranking within each artist’s dataset to compare their most popular tracks.  
+
+These **SQL techniques** allowed us to extract insights from large-scale music data, enabling deeper analysis of streaming trends and artist performance. 🚀### 📌 Key Learnings
 - **SQL Query Optimization:** Improved query efficiency using `WITH` clauses and `WINDOW FUNCTIONS`.
 - **Data Cleaning Techniques:** Identified missing and incorrect data before performing analysis.
 - **Trend Analysis:** Discovered insights on track popularity, streaming patterns, and artist performance.
